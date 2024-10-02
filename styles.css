@@ -1,0 +1,177 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #071824; /* Darker font color */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #336383;
+    color: #dfd0b8e6;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #dfd0b8ae;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #eae1d2a1; /* Lighter container color */
+    border-radius: 15px;
+}
+
+h2 {
+    color: #3C5B6F; /* Darker font color */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 18px;
+    color: #072031; /* Darker font color */
+    margin-right: 10px;
+}
+
+select, input[type="color"], button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button {
+    color: #fff;
+    background-color: #3C5B6F;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #153448;
+}
+
+.color-picker {
+    display: inline-flex;
+    align-items: center;
+}
+
+#color-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f9f1f0;
+    margin-left: 10px;
+    border: 2px solid #a19685;
+}
+
+.output-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.palette, .suggestions {
+    width: 45%;
+}
+
+.palette h2 {
+    color: #092130; /* Darker font color */
+}
+
+.suggestions h2 {
+    color: #0b2333; /* Darker font color */
+}
+
+.palette div {
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.2s;
+    background-color: #3C5B6F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #DFD0B8;
+    font-size: 16px;
+}
+
+.palette div span {
+    color: #DFD0B8;
+    font-size: 14px;
+    display: none;
+}
+
+.palette div:hover span {
+    display: block;
+}
+
+.palette div:hover {
+    transform: scale(1.1);
+}
+
+.suggestions-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.suggestions-table th, .suggestions-table td {
+    border: 1px solid #3C5B6F;
+    padding: 8px;
+    text-align: left;
+}
+
+.suggestions-table th {
+    background-color: #3C5B6F;
+    color: #DFD0B8;
+}
+
+.suggestions-table td {
+    background-color: #E3E3E3;
+}
